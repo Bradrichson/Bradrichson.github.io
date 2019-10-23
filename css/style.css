@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 5px; }
+
+header {
+  background: #5088d1;
+  text-align: center; }
+  header h1 {
+    color: #050520;
+    margin: 0; }
+  header h3 {
+    color: #050520;
+    margin: 0; }
+
+/**NAV**/
+nav {
+  background: #5088d1;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 5px 0;
+    margin: 5px; }
+    nav ul li {
+      border-right: 1px solid #5d5d5d;
+      padding: 0 10px;
+      list-style: none;
+      text-align: center; }
+      nav ul li a {
+        color: #050520;
+        text-decoration: none;
+        position: relative;
+        font-weight: bold; }
+
+li:nth-of-type(4) {
+  border: none; }
+
+a:after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0px;
+  background: #050520; }
+
+a:hover {
+  color: black; }
+
+a, a:after {
+  transition: all 0.5s; }
+
+a:hover:after {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  nav {
+    position: relative; }
+    nav ul {
+      margin: 0;
+      padding-top: 7px; }
+      nav ul li {
+        flex: 0 1 15%; } }
+
+/**NAV END**/
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
