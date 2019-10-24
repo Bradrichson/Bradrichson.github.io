@@ -11,7 +11,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Cinzel', serif;
-  letter-spacing: 5px;
+background: cornflowerblue;
 }
 
 header {
@@ -85,7 +85,14 @@ a:hover:after {
     width: 100%;
 }
 
+@media (min-width: 468px) {
+ 
+}
+
 @media (min-width: 768px) {
+  body {
+    letter-spacing: 5px;
+  }
     nav {
         position: relative;
        ul{ 
@@ -100,3 +107,40 @@ a:hover:after {
 
 /**NAV END**/
 
+
+/**PLAY**/
+
+
+main>div.wall {
+
+  border-bottom: 300px solid rgb(63, 76, 194);
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
+  height: 0%;
+  width: 100vw;
+margin: auto;
+top: 410px;
+position: relative;
+border-radius: 100px / 5px; 
+  box-shadow:0 0 18px rgba(0,0,0,0.6);
+}
+
+
+
+main div.wall:before {
+  content: "";
+  background: linear-gradient(rgb(63, 76, 194), rgb(32, 32, 92));
+  height: 50.5vh;
+width: 100%;
+position: absolute;
+top: -410px;
+
+
+box-shadow:0 0 18px rgba(0,0,0,0.6);
+}
+
+
+
+
+
+/**PLAY END**/
